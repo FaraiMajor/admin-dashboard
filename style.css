@@ -1,0 +1,12 @@
+body {
+    margin: 0;
+    color: whitesmoke;
+    /* background: linear-gradient(90deg, grey, black, white, grey) */
+}
+
+.main {}
+
+.sidemenu {
+    background-color: #0F1624;
+    ;
+}
