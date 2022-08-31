@@ -16,9 +16,140 @@ container {
 /* header */
 
 .header {
-    border: red solid 3px;
     grid-column: 2/3;
     display: grid;
+    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 5fr 1fr 1fr 1fr;
+    background-color: #355188;
+    padding-top: 20px;
+}
+
+button {
+    border: none;
+    background: white;
+}
+
+.search img {
+    width: 30px;
+}
+
+input.searchbar {
+    border: none;
+    background: whitesmoke;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 20px;
+    height: 28px;
+    flex-grow: 1;
+    justify-self: start;
+    align-self: center;
+}
+
+div.search {
+    grid-area: 1/1/2/2;
+    grid-auto-flow: column;
+    align-self: center;
+    padding-left: 20px;
+    gap: 5px;
+    display: flex;
+    flex-grow: 1;
+}
+
+.profile img {
+    width: 50px;
+}
+
+.bell img {
+    width: 25px;
+}
+
+button.search {
+    justify-self: end;
+    background-color: #355188;
+}
+
+.bell {
+    padding: 0;
+    justify-self: end;
+    background-color: #355188;
+}
+
+.profile {
+    padding: 0;
+    justify-self: center;
+    background-color: #355188;
+}
+
+.user-name {
+    padding: 0;
+    display: flex;
+    justify-self: start;
+    align-self: center;
+    font-size: 18px;
+    color: whitesmoke;
+}
+
+.greeting {
+    display: grid;
+    grid-auto-flow: column;
+    justify-self: start;
+    align-self: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+.greeting img {
+    width: 70px;
+}
+
+.greeting .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: whitesmoke;
+    line-height: 0.7;
+}
+
+.greeting .text .hi {
+    font-size: 14px;
+}
+
+button.new,
+button.upload,
+button.share {
+    background: #0F1624;
+    height: 30px;
+    width: 100px;
+    border-radius: 25px;
+    color: white;
+    text-transform: capitalize;
+    font-weight: bold;
+    align-self: center;
+    cursor: pointer;
+}
+
+button.new:hover,
+button.upload:hover,
+button.share:hover {
+    background-color: #1a2844;
+    color: white;
+    transition: all ease-in-out;
+    transition-duration: 0.7s;
+    transform: scale(1.1);
+}
+
+button.new {
+    justify-self: end;
+}
+
+button.upload {
+    justify-self: center;
+}
+
+button.share {
+    justify-self: start;
 }
 
 
@@ -63,6 +194,13 @@ container {
 .sidebar .main-links ul li:hover,
 .secondary-links ul li:hover {
     background-color: #1a2844;
+    transition: all ease-in-out;
+    transition-duration: 0.7s;
+    transform: scale(1.1);
+    overflow: hidden;
+    width: 200px;
+    padding: 0 15px;
+    border-radius: 5px;
 }
 
 .main-links {
@@ -80,7 +218,6 @@ container {
 /* main */
 
 .main {
-    border: green solid 3px;
     grid-column: 2/3;
     display: grid;
     grid-template-columns: 1fr 1fr / 1fr 0.8fr
